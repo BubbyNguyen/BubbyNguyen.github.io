@@ -1,3 +1,5 @@
+ /* Navigation Bar */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,3 +23,13 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+ /* Introduction */
+
+#mainsection{
+	height: 320%;
+	background-color: coral;
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 0px;
+	padding-top: 0px;
