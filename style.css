@@ -27,19 +27,17 @@ img{
   font-weight: 300;
   display:block;
   margin-bottom: 2em;
+  font-size: 1.75rem;
 }
 
 /*Makes Text Bigger Depending on Screen Size*/
 
-@media (min-width: 55rem){
-  .title{
-    font-size: 3rem;
-  }
-}
+
 
 /* Buttons */
 .buttons {
   font-size: 1.5rem;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   border-width: 2px;
@@ -88,11 +86,13 @@ nav a:focus {
 }
 
 
+
 /*header */
 
 .introduction {
   background-image: url(img/header1.JPG);
-  padding: 10em 20em;
+  padding: 10em 0;
   background-size:cover;
+  background-position: center;
   color: #FFF;
 }
