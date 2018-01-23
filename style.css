@@ -29,6 +29,14 @@ img{
   margin-bottom: 2em;
 }
 
+/*Makes Text Bigger Depending on Screen Size*/
+
+@media (min-width: 55rem){
+  .title{
+    font-size: 3rem;
+  }
+}
+
 /* Buttons */
 .buttons {
   font-size: 1.5rem;
@@ -83,7 +91,7 @@ nav a:focus {
 /*header */
 
 .introduction {
-  background-image: url(img/header1.jpg);
+  background-image: url(img/header1.JPG);
   padding: 10em 20em;
   background-size:cover;
   color: #FFF;
