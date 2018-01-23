@@ -1,41 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*Typography*/
+.title{
+  font-size: 2.5rem;
+}
+
+.title span{
+  font-weight: 300;
+  display:block;
+  margin-bottom: 2em;
+}
+
+/* Buttons */
+.buttons {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em 1.75em;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background: #
+}
+
  /* Navigation Bar */
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+header {
+  margin-top: 1em;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-li {
-    float: left;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+nav li {
+  display: inline-block;
+  margin: 1em;
+
 }
 
-li a:hover {
-    background-color: #111;
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .75em;
+  color: #FFF;
 }
 
- /* Introduction */
+nav a:hover,
+nav a:focus {
+  color: #DDD;
+}
 
-#introduction{
-	height: 320%;
-	background-color: coral;
-	text-align: center;
-	color: #ffffff;
-	padding-bottom: 0px;
-	padding-top: 10px;
-	margin:0;
-	
-.header h1 {
-    margin-top: 0;
+
+/*header */
+
+.introduction {
+  background-image: url(img/header1.jpg);
+  padding: 10em 20em;
+  background-size:cover;
+  color: #FFF;
 }
