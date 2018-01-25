@@ -96,3 +96,11 @@ nav a:focus {
   background-position: center;
   color: #FFF;
 }
+
+.aboutmelists {
+  list-style: none;
+}
+
+.aboutmelists li {
+  display: inline-block;
+}
