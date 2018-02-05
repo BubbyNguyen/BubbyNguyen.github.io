@@ -104,3 +104,7 @@ nav a:focus {
 .aboutmelists li {
   display: inline-block;
 }
+
+.aboutmelists ul {
+  padding: 0em
+}
