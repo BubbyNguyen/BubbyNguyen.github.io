@@ -97,13 +97,13 @@ nav a:focus {
   color: #FFF;
 }
 
-.aboutmelists ul {
-  padding: 0em;
-}
-
 .aboutmelists {
   padding: 0em;
   list-style: none;
+}
+
+.aboutmelists ul {
+  padding: 0em;
 }
 
 .aboutmelists li {
