@@ -97,6 +97,10 @@ nav a:focus {
   color: #FFF;
 }
 
+.aboutmelists ul {
+  padding: 0em;
+}
+
 .aboutmelists {
   list-style: none;
 }
@@ -105,6 +109,4 @@ nav a:focus {
   display: inline-block;
 }
 
-.aboutmelists ul {
-  padding: 0em
-}
+
