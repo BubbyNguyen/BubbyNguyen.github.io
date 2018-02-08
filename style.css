@@ -30,6 +30,21 @@ img{
   font-size: 1.75rem;
 }
 
+.titleabout {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.titleaboutme {
+  font-size: 1.75rem;
+  font-family: 'Playfair', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
 /*Makes Text Bigger Depending on Screen Size*/
 
 
@@ -75,7 +90,7 @@ nav a {
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 1rem;
   padding: .75em;
   color: #FFF;
 }
@@ -97,9 +112,13 @@ nav a:focus {
   color: #FFF;
 }
 
+.about-me {
+  padding: 3em;
+}
+
 .aboutmelists {
   padding: 0em;
-  list-style: none;
+  list-style-type: none;
 }
 
 .aboutmelists ul {
@@ -108,6 +127,13 @@ nav a:focus {
 
 .aboutmelists li {
   display: inline-block;
+  vertical-align: top;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 
+.aboutmelists ul li {
+  display: block;
+  padding-top: 1em;
+}
