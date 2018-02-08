@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1">
     <title> Bobby Nguyen | Mechatronics Engineer </title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
@@ -33,32 +34,46 @@
    </section>
 
    <section class = "about-me">
-    <h1> About Me </h1>
-    <p> Insert text here about me. </p>
+    <h1 class = "titleaboutme"> Getting to Know Me<span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span> </h1>
+    <p> As an engineering student, I have always had a passion and admiration for great design, creation, and implementation
+    of new technologies. Thus, my obsession with the latest and greatest has pushed me to try creating things of my own.
+    On my spare time, I enjoy tinkering with arduinos, learning new languages, and conceptualizing technological solutions
+    to my everyday problems. I'm a firm believer that the implemetation of technology can bring society to a more innovative era
+    and as an aspiring engineer, I would love to be apart of that. Aside from engineering, I also have a great interest in
+    fashion. It is a form of art that allows everyone to become living canvases that show expressions of themselves.   </p>
   </section>
 
-   <ul class ="aboutmelists">      
-     
-     
+   <ul class ="aboutmelists">
+
+
     <li class = "education">
       <h1 class = "titleabout"> Education </h1>
-      <p> Insert info about school here <p>
+      <img src="img/Uwaterloo.gif">
+      <p> University of Waterloo </br>
+          Canidate for Bachelor of Science (BASc) </br>
+          Honours Mechatronics Engineering </br>
+          Class of 2016 - 2021 </p>
+
     </li>
-     
+
      <li class = "Interests">
        <h1 class = "titleabout"> Interests </h1>
-       <ul>
-         <li> Stuff </li>
+       <ul class = "Interestscon">
+         <li> Fashion /  Streetwear </li>
+         <li> Autonomous Technology </li>
+        <li> Home Automation </li>
+        <li> Arduino Projects </li>
+        <li> Urban Cycling</li>
        </ul>
      </li>
-   </ul>  
-    
-       
-       
-  <section class ="Projects">
-    <h1> My projects </h1>
+   </ul>
 
- 
+
+
+  <section class ="Projects">
+    <h1> My Creations </h1>
+
+
     <!-- Project Items -->
 
   <figure class="port-item">
@@ -94,7 +109,7 @@
       <a href-"" class="button button-accent button -mall">
     </figcaption>
   </figure>
-
+00
   <figure class="port-item">
     <img src=" " alt = "Project 1">
     <figcaption class="port-desc">
@@ -105,8 +120,205 @@
 
 </section>
 
+<head>
+    <style>
+      #map {
+        height: 800px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Travel Map</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var vietnam1 = {lat: 21.027764, lng: 105.834160};
+        var vietnam2 = {lat: 10.823099, lng: 106.629664};
+        var china1 = {lat: 31.230390, lng: 121.473702};
+        var china2 = {lat: 39.904200, lng: 116.407396};
+        var chicago = {lat: 41.878114, lng: -87.629798};
+        var nyc = {lat: 40.712775, lng: -74.005973};
+        var boston = {lat: 42.360082, lng: -71.058880};
+        var orlando = {lat: 28.538335, lng: -81.379236};
+        var havana = {lat: 23.1135925, lng:  -82.36659559999998};
+        var cancun = {lat: 21.161908, lng: -86.85152790000001};
+        var montegobay = {lat: 18.4762228, lng: -77.8938895};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: vietnam1
+        });
+
+<!--START Hanoi-->
+        var contentstringhanoi = '<h1>Hanoi</h1>';
+        var marker1 = new google.maps.Marker({
+          position: vietnam1,
+          map: map
+
+        });
+
+<!--START Saigon-->
+        var contentstringsaigon = '<h1>Saigon</h1>';
+        var marker2 = new google.maps.Marker({
+          position: vietnam2,
+          map: map
+
+        });
+
+<!--START Shanghai-->
+        var contentstringbejing = '<h1>Shanghai</h1>';
+        var marker3 = new google.maps.Marker({
+          position: china1,
+          map: map
+
+        });
+
+<!--START Bejing-->
+        var contentstringshanghai = '<h1>Bejing</h1>';
+        var marker4 = new google.maps.Marker({
+          position: china2,
+          map: map
+
+        });
+
+<!--START Chicago-->
+        var contentstringchicago = '<h1>Chicago</h1>';
+        var marker5 = new google.maps.Marker({
+          position: chicago,
+          map: map
+
+        });
+
+<!--START NYC-->
+        var contentstringnyc = '<h1>New York City</h1>';
+        var marker6 = new google.maps.Marker({
+          position: nyc,
+          map: map
+
+        });
+
+<!--START Boston-->
+        var contentstringboston = '<h1>Boston</h1>';
+        var marker7 = new google.maps.Marker({
+          position: boston,
+          map: map
+
+        });
+
+<!--START Orlando-->
+        var contentstringorlando = '<h1>Orlando</h1>';
+        var marker8 = new google.maps.Marker({
+          position: orlando,
+          map: map
+
+        });
+
+<!--START Havana-->
+        var contentstringhavana = '<h1>Havana</h1>';
+        var marker9 = new google.maps.Marker({
+          position: havana,
+          map: map
+
+        });
+
+<!--START Cancun-->
+        var contentstringcancun = '<h1>Cancun</h1>';
+        var marker10 = new google.maps.Marker({
+          position: cancun,
+          map: map
+
+        });
+
+<!--START MontegoBay-->
+        var contentstringmontegobay = '<h1>Montego Bay</h1>';
+        var marker11 = new google.maps.Marker({
+          position: montegobay,
+          map: map
+
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+         });
+
+
+        google.maps.event.addListener(marker1, "click", function () {
+             infowindow.open(map, marker1);
+             infowindow.setContent(contentstringhanoi);
+             map.panTo(marker1.getPosition());
+        });
+
+        google.maps.event.addListener(marker2, "click", function () {
+             infowindow.open(map, marker2);
+             infowindow.setContent(contentstringsaigon);
+             map.panTo(marker2.getPosition());
+        });
+
+        google.maps.event.addListener(marker3, "click", function () {
+             infowindow.open(map, marker3);
+             infowindow.setContent(contentstringbejing);
+             map.panTo(marker3.getPosition());
+        });
+
+        google.maps.event.addListener(marker4, "click", function () {
+             infowindow.open(map, marker4);
+             infowindow.setContent(contentstringshanghai);
+             map.panTo(marker4.getPosition());
+        });
+
+        google.maps.event.addListener(marker5, "click", function () {
+             infowindow.open(map, marker5);
+             infowindow.setContent(contentstringchicago);
+             map.panTo(marker5.getPosition());
+        });
+
+        google.maps.event.addListener(marker6, "click", function () {
+             infowindow.open(map, marker6);
+             infowindow.setContent(contentstringnyc);
+             map.panTo(marker6.getPosition());
+        });
+
+        google.maps.event.addListener(marker7, "click", function () {
+             infowindow.open(map, marker7);
+             infowindow.setContent(contentstringboston);
+             map.panTo(marker7.getPosition());
+        });
+
+        google.maps.event.addListener(marker8, "click", function () {
+            infowindow.open(map, marker8);
+            infowindow.setContent(contentstringorlando);
+            map.panTo(marker8.getPosition());
+        });
+
+        google.maps.event.addListener(marker9, "click", function () {
+            infowindow.open(map, marker9);
+            infowindow.setContent(contentstringhavana);
+            map.panTo(marker9.getPosition());
+        });
+
+        google.maps.event.addListener(marker10, "click", function () {
+            infowindow.open(map, marker10);
+            infowindow.setContent(contentstringcancun);
+            map.panTo(marker10.getPosition());
+        });
+
+        google.maps.event.addListener(marker11, "click", function () {
+            infowindow.open(map, marker11);
+            infowindow.setContent(contentstringmontegobay);
+            map.panTo(marker11.getPosition());
+        });
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAifFOyhfmEDxTGow4g9MwH1ZDTMsM_qkM&callback=initMap">
+    </script>
+  </body>
+
+
+
+
 <section class = "footer">
-  <h1> DONE </h1>
+  <h1> Reach Out to Me</h1>
 </section>
 
  </body>
