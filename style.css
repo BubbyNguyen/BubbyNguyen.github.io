@@ -158,7 +158,9 @@ nav a:focus {
   padding-top: 1em;
 }
 
-
+.projects {
+  margin-bottom: 2em;
+}
 .contacticons {
   display: inline-block;
   margin:1em;
@@ -175,6 +177,15 @@ nav a:focus {
   padding: 1em;
 }
 
+.Projects ul{
+  list-style-type: none;
+  padding-left:0px;
+}
+
+
+.Projects ul li{
+  display: inline-block;
+}
 /*Makes Text Bigger Depending on Screen Size*/
 
 @media only screen and (max-width: 423px) {
@@ -201,6 +212,7 @@ padding-bottom:0.5em;
   }
 
 }
+
 
 @media only screen and (max-width: 590px) {
 
