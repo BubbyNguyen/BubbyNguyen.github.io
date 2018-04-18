@@ -182,9 +182,18 @@ nav a:focus {
   padding-left:0px;
 }
 
+.port-item {
+  display:inline-block
+  border: 1px solid #ccc;
+}
+
+.port-item img{
+  width: 50%;
+}
 
 .Projects ul li{
   display: inline-block;
+  border: 1px solid #ccc;
 }
 /*Makes Text Bigger Depending on Screen Size*/
 
