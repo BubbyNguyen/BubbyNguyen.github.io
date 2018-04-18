@@ -45,8 +45,6 @@ img{
 .loader__dot { animation: 1s blink infinite }
 .loader__dot:nth-child(2) { animation-delay: 250ms }
 .loader__dot:nth-child(3) { animation-delay: 500ms }
-/*Makes Text Bigger Depending on Screen Size*/
-
 
 
 /* Buttons */
@@ -60,11 +58,16 @@ img{
   border-width: 2px;
   border-style: solid;
   padding: 0.5em 1.75em;
+  border-color: #e2714f;
+  color: white;
+  width: 187px;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
 
 
 .buttons:hover {
-  background-color: #e2714f; /* Green */
+  background-color: #e2714f;
   color: white;
 }
 
@@ -122,7 +125,10 @@ nav a:focus {
 
 
 .about-me {
-  padding: 3em;
+  padding-left:3em;
+  padding-right:3em;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 .about-me p {
   padding-left:6em;
@@ -148,4 +154,57 @@ nav a:focus {
 .aboutmelists ul li {
   display: block;
   padding-top: 1em;
+}
+
+
+.contacticons {
+  display: inline-block;
+  margin:1em;
+  padding:0em;
+  width: 50px;
+}
+
+.footer {
+  background-color: #e2714f;
+}
+
+.footer h1 {
+  margin: 0px;
+  padding: 1em;
+}
+
+/*Makes Text Bigger Depending on Screen Size*/
+
+@media only screen and (max-width: 423px) {
+
+  nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color: #FFF;
+  }
+
+.about-me{
+padding-top:1em;
+padding-bottom:0.5em;
+}
+
+  .buttons{
+    font-size: 1rem;
+    width: 150px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+  .about-me p {
+    padding-left:1em;
+    padding-right:1em;
+  }
+
 }
