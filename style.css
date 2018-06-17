@@ -45,8 +45,8 @@ img{
 }
 @keyframes blink {50% { color: transparent }}
 .loader__dot { animation: 1s blink infinite }
-.loader__dot:nth-child(2) { animation-delay: 250ms }
-.loader__dot:nth-child(3) { animation-delay: 500ms }
+.loader__dot:nth-child(5) { animation-delay: 250ms }
+.loader__dot:nth-child(6) { animation-delay: 500ms }
 
 
 /* Buttons */
@@ -119,10 +119,27 @@ nav a:focus {
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/header1.JPG);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(img/header1.JPG);
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/header1.JPG);
-  padding: 10em 0;
+  padding: 5em 0;
+  height: 100vh;
+  width:100vw;
+  display: table-cell;
+  vertical-align: middle;
   background-size:cover;
   background-position: center;
   color: #FFF;
+}
+
+.introduction div{
+  display:inline-block;
+}
+
+.introduction img {
+  width:20%;
+  border:3px solid #e2714f;
+  border-radius: 100%;
+  /*-webkit-border-radius: 500px;
+  -moz-border-radius: 500px;*/
+
 }
 
 
@@ -130,11 +147,30 @@ nav a:focus {
   padding-left:3em;
   padding-right:3em;
   padding-top: 3em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
+  text-align: center;
 }
+
+.titleaboutme{
+  display: inline-block;
+
+  margin-top: 0em;
+  margin-right: 0em;
+  width:25%;
+  text-align: left;
+  padding-left:1em;
+  font-size: 3rem;
+  vertical-align: top;
+}
+
 .about-me p {
-  padding-left:6em;
-  padding-right:6em;
+  display: inline-block;
+  margin-top: 0em;
+  margin-left: 0em;
+  width:45%;
+  text-align: left;
+  padding-left:0em;
+  padding-right:3em;
 }
 .aboutmelists {
   padding: 0em;
@@ -232,13 +268,37 @@ padding-bottom:0.5em;
 
 @media only screen and (max-width: 590px) {
 
+  br {
+    display: none;
+  }
+
+  .titleaboutme{
+    display: block;
+    width:100%;
+    text-align: center;
+    padding-left:0em;
+    font-size: 2rem;
+  }
+
   .about-me p {
+    display: block;
     padding-left:1em;
     padding-right:1em;
+    width:100%;
+  }
+  .introduction img {
+    width:40%;
   }
 
   .current::before {
     content: "University of Waterloo Mechatronics Engineering";
   }
-
 }
+
+
+@media only screen and (min-width: 750px) and (max-width: 1100px) {
+  .titleaboutme{
+    width:45%;
+  }
+
+  }
