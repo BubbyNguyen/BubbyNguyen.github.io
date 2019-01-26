@@ -172,31 +172,221 @@ nav a:focus {
   padding-left:0em;
   padding-right:3em;
 }
+
 .aboutmelists {
   padding: 0em;
   list-style-type: none;
-}
-
-.aboutmelists ul {
-  padding: 0em;
+    margin-bottom: 0em;
 }
 
 .aboutmelists li {
-  display: inline-block;
+  display: block;
   vertical-align: top;
-  padding-left: 2em;
-  padding-right: 2em;
+  border-top-width: 2em;
+    border-bottom-width: 2em;
+    border-style: solid;
+    color: #FFF;
+
+}
+.education {
+    border-width: 4px;
+    text-align: center;
+    vertical-align: middle;
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    background-color: #8F2DC6;
+    border-color:#8F2DC6;
+}
+
+.education div{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:6em;
+    width: 35%;
 }
 
 
+.education img {
+    text-align: center;
+    margin-left: 6em;
+    height:100%;
+    vertical-align: middle;
+    display: inline-block;
+   
+}
+
+.Interests {
+    vertical-align: middle;
+    text-align: middle;
+    overflow:hidden;
+    width: 100%;
+    border-color: #e2714f;
+    background-color: #e2714f;
+}
+
+
+.Interests h1 {
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 6em;
+    width:35%;
+    color: #FFF;
+}
+.aboutmelists ul{
+    display:inline-block;
+    color: #FFF;
+}
 .aboutmelists ul li {
   display: block;
   padding-top: 1em;
+    border-width:0em;
 }
 
-.projects {
-  margin-bottom: 2em;
+.Journey{
+    text-align: center;
+    background-color: darkblue;
 }
+.Journey h1{
+text-align: left;
+    width:35%;
+    display:inline-block;
+    margin-right:16.5em;
+    color: #FFF;
+}
+
+.Journey h3{
+    color: #FFF;
+    margin:0em;
+    border: 1em solid darkblue;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content ul {
+    text-align: left;
+}
+
+.Projects{
+    background-color: darkcyan;
+    text-align: center;
+    
+}
+.Projects h1{
+text-align: left;
+    width:35%;
+    display:inline-block;
+    margin-right:16.5em;
+    color: #FFF;
+}
+
+.Projects p{
+    color: #FFF;
+    margin:0em;
+    border: 1em solid darkcyan;
+}
+
+.Projects img {
+    text-align: center;
+    position:relative;
+    display:block;
+    width: 10%;
+    left:45%;
+}
+
+
 .contacticons {
   display: inline-block;
   margin:1em;
@@ -213,28 +403,7 @@ nav a:focus {
   padding: 1em;
 }
 
-.Projects ul{
-  list-style-type: none;
-  padding-left:0px;
-}
 
-.port-item {
-  text-align: center;
-  display:inline-block;
-  width: 80%;
-}
-
-.port-item img{
-  width: 50%;
-}
-
-
-.Projects ul li{
-  display: inline-block;
-  border: 1px solid #ccc;
-  text-align: center;
-  width: 40%;
-}
 /*Makes Text Bigger Depending on Screen Size*/
 
 @media only screen and (max-width: 423px) {
@@ -260,10 +429,6 @@ padding-bottom:0.5em;
     margin-right: 0em;
   }
 
-  .Projects ul li{
-    width: auto;
-  }
-}
 
 
 @media only screen and (max-width: 590px) {
@@ -293,6 +458,7 @@ padding-bottom:0.5em;
   .current::before {
     content: "University of Waterloo Mechatronics Engineering";
   }
+    
 }
 
 
